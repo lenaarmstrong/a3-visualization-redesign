@@ -130,7 +130,7 @@
 			<figure>
 				<img src="viz-redesign.png" alt="Visualization redesign of Covid-19 cases over time with colors representing the number of Covid-related deaths" style="width:100%"/>
 				<figcaption>
-          BRIEF CAPTION HERE.
+					The number of U.S. Covid-19 cases and related deaths over time shows how cases peaked in January, but were less deadly in 2022 compared to 2021. 
 				</figcaption>
 			</figure>
 
@@ -140,13 +140,54 @@
 			<h2>Design Process & Design Decisions</h2>
 
 			<p>
-        DESCRIBE YOUR DESIGN PROCESS AND DECISION DECISIONS HERE.
+				My goal for the final visualization was to show how cases changed over time, especially how cases 
+				peaked in January 2022, while adding context about the uncertainty of the future effect of Covid-19 
+				case increases, since it had become less deadly. I started with sketch #3 and plotted the data in 
+				Tableau as a dot chart with each datapoint representing the sum of new confirmed cases and color 
+				representing the number of new deceased. I noticed some points were negative for the number of new 
+				confirmed cases and new deceased and removed them, since it is not possible to have negative cases or 
+				deceased people. I also noticed there was only one data point for December 2022 and only half the month 
+				of September, so I excluded them by choosing to end the visualization in June 2022. I used half of a 
+				year instead of ¾ of a year to highlight the January trend that was the focus of the original 
+				visualization. I separated each year through a gray box with white space in between, such that each year 
+				would be visually grouped to facilitate between year comparisons. I also chose a gradient as opposed to 
+				the rainbow in sketch #3 to better show the change in the number of Covid-19 related deaths over time. 
+
+				Then I used the Tableau dot plot of the U.S. Covid  cases and related deaths over time to create one in 
+				Figma that had circles representing each million cases because I wanted to create a more person-oriented 
+				visualization that conveyed the scale and effect of Covid-19 on human lives. To adapt from sketch #3, I 
+				added small circles when there were less than 500,000 cases to show that they were not zero and greater 
+				than 500,000 cases where represented by the number of circles rounded to the nearest million (i.e., 
+				500,000 cases is one circle). I added this information in the key to provide more context for the reader. 
+				I kept the y-axis labels, so the viewer can quickly tell the scale and number of people without having to 
+				count each circle. I also provided annotations on January 2020 and 2021 to highlight these peaks as well 
+				as show the actual numbers of confirmed cases and Covid-19 related deaths and that they were rounded to 
+				mitigate confusion. I hoped to convey how Covid-19 was still prevalent in 2022, while contextualizing it 
+				with information about Covid-19 related deaths and when the first vaccine came out to help explain the 
+				trends and importance of interventions to help people stay healthy. However, by using the number of 
+				newly deceased people for color, it may overemphasize points that have more cases. It might have been 
+				better to use a ratio of the number of people that died from covid who got it, but I did not have 
+				access to this data, since I wasn’t sure which month the newly deceased people first got Covid-19. 
       </p>
 
       <h3>Reflection</h3>
 
       <p>
-        WRITE YOUR FINAL REFLECTION HERE.
+        My final design aimed to address my critique of the original visualization regarding the need for more 
+		context and sense of scale. I hoped to keep the elements of time by keeping the month by month comparison, 
+		but I plotted points on an axis from 0 to 20.3 million, used the size of circles to represent greater or 
+		less than 500,000 cases, and represented each 1 million cases through stacked circles to facilitate a better 
+		understanding of scale and comparisons between months. I also addressed my concern about how the original 
+		visualization did not show how the virus had become less deadly overtime. There is a need to balance 
+		communicating the potential spike and severity of the Omicron peak in January 2022 with the information 
+		that it is less deadly, so people appropriately respond and take steps, such as getting regularly vaccinated 
+		or masking in crowded spaces, while addressing that some of the earlier measures of the pandemic, such as 
+		lockdowns, are no longer as necessary. I also provided when the vaccine came out to show how that may have 
+		impacted the severity and deadliness of cases over time. There is still room to add more detail about the 
+		uncertainty of severity of future Covid-19 cases at the time, which might be addressed through researchers' 
+		predictions of future cases at the time in unfilled circles, but there is a chance this could have further 
+		complicated the message. Additionally, other events, such as when boosters came out or mask mandates changes, 
+		could add further context.
       </p>
 		</section>
 	</main>
