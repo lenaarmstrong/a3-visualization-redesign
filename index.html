@@ -44,7 +44,7 @@
 				period in a circular structure, it is challenging to understand the scale and larger context 
 				of Covid-19 in the United States through the visualization. The main focus of the visualization 
 				is how the number of Covid-19 cases have increased in winter and there is the largest opening 
-				for the few days of January 2022. The widening red area coupled with the arrow suggests that 
+				for the first few days of January 2022. The widening red area coupled with the arrow suggests that 
 				there will be much further expansion; however, the cases significantly decreased in February 2022. 
 				The overall effect of the current visualization is immediate concern around the newest variant of 
 				Covid-19 and a spike in cases in January. However, as the New York Times Opinion piece suggests, 
@@ -84,7 +84,7 @@
 
 			<ul>
 				<li>The goal was to better show the scale of the number of cases by plotting the number of cases on the y-axis as opposed to showing the scale through area.</li>
-				<li>By grouping the number of cases into seasons and using color to distinguish years, the aim was to more directly compare the seasonal variation of Covid-19 across time. While there is a jump in the winter, there isn’t a clear trend, and it might be better to break back up into month aggregates to understand more nuances over time.</li>
+				<li>By grouping the number of cases into seasons and using color to distinguish years, the aim was to more directly compare the seasonal variation of Covid-19 across time. While there is a jump in the winter, there isn’t a clear trend, and it might be better to break the data back up into month aggregates to understand more nuances over time.</li>
 				<li>There is still a need to add more context in this chart, such as the number of deceased people due to Covid-19 to show the severity in addition to the transmissibility.</li>
 			</ul>
 
@@ -101,7 +101,7 @@
 
 			<ul>
 				<li>I wanted to explore the design space of circular representations and see if there was a way to keep a similar shape as the original visualization for easy month to month comparisons, while providing a better perspective on scale.</li>
-				<li>There are three rings representing each year (2020, 2021, and 2022) and they have the same scale 0 - 6 million cases with an extra jut out for the 20.3 million cases in January 2020, which emphasizes the Omicron spike.</li>
+				<li>There are three rings representing each year (2020, 2021, and 2022) and they have the same scale 0 - 6 million cases with an extra jut out for the roughly 20 million cases in January 2020, which emphasizes the Omicron spike.</li>
 				<li>Additionally, I broke this sketch into months to show more variation and detail into changes over time.</li>
 				<li>However, there is still a need to add more context into the severity of Covid-19 over time.</li>
 			</ul>
@@ -141,24 +141,25 @@
 
 			<p>
 				My goal for the final visualization was to show how cases changed over time, especially how cases 
-				peaked in January 2022, while adding context about the uncertainty of the future effect of Covid-19 
-				case increases, since it had become less deadly. I started with sketch #3 and plotted the data in 
-				Tableau as a dot chart with each datapoint representing the sum of new confirmed cases and color 
+				peaked in January 2022, while adding context about the uncertainty of the future effect of Covid-19. 
+				I started with sketch #3 and plotted the data in 
+				Tableau as a dot plot with each datapoint representing the sum of new confirmed cases and color 
 				representing the number of new deceased. I noticed some points were negative for the number of new 
 				confirmed cases and new deceased and removed them, since it is not possible to have negative cases or 
 				deceased people. I also noticed there was only one data point for December 2022 and only half the month 
 				of September, so I excluded them by choosing to end the visualization in June 2022. I used half of a 
 				year instead of ¾ of a year to highlight the January trend that was the focus of the original 
 				visualization. I separated each year through a gray box with white space in between, such that each year 
-				would be visually grouped to facilitate between year comparisons. I also chose a gradient as opposed to 
+				would be visually grouped to facilitate easier between year comparisons. I also chose a gradient as opposed to 
 				the rainbow in sketch #3 to better show the change in the number of Covid-19 related deaths over time. 
 				<br><br>
-				Then I used the Tableau dot plot of the U.S. Covid  cases and related deaths over time to create one in 
+				Then I used the Tableau dot plot of the U.S. Covid  cases and related deaths over time to create a visualization in 
 				Figma that had circles representing each million cases because I wanted to create a more person-oriented 
-				visualization that conveyed the scale and effect of Covid-19 on human lives. To adapt from sketch #3, I 
-				added small circles when there were less than 500,000 cases to show that they were not zero and greater 
-				than 500,000 cases where represented by the number of circles rounded to the nearest million (i.e., 
-				500,000 cases is one circle). I added this information in the key to provide more context for the reader. 
+				visualization that conveyed the scale and effect of Covid-19 on human lives and put more emphasis on the humans 
+				behind the numbers. To adapt from sketch #3, I 
+				added small circles when there were less than 500,000 cases to show that they were not zero and larger circles 
+				when there were greater than 500,000 cases. Each month had the number of circles corresponding to the number of 
+				cases rounded to the nearest million. I added this information in the key to provide more context for the reader. 
 				I kept the y-axis labels, so the viewer can quickly tell the scale and number of people without having to 
 				count each circle. I also provided annotations on January 2020 and 2021 to highlight these peaks as well 
 				as show the actual numbers of confirmed cases and Covid-19 related deaths and that they were rounded to 
@@ -166,7 +167,7 @@
 				with information about Covid-19 related deaths and when the first vaccine came out to help explain the 
 				trends and importance of interventions to help people stay healthy. However, by using the number of 
 				newly deceased people for color, it may overemphasize points that have more cases. It might have been 
-				better to use a ratio of the number of people that died from covid who got it, but I did not have 
+				better to use a ratio of the number of people that died from Covid-19 of the confirmed cases, but I did not have 
 				access to this data, since I wasn’t sure which month the newly deceased people first got Covid-19. 
       </p>
 
@@ -178,16 +179,17 @@
 		but I plotted points on an axis from 0 to 20.3 million, used the size of circles to represent greater or 
 		less than 500,000 cases, and represented each 1 million cases through stacked circles to facilitate a better 
 		understanding of scale and comparisons between months. I also addressed my concern about how the original 
-		visualization did not show how the virus had become less deadly overtime. There is a need to balance 
+		visualization did not show how the virus had become less deadly over time. There is a need to balance 
 		communicating the potential spike and severity of the Omicron peak in January 2022 with the information 
 		that it is less deadly, so people appropriately respond and take steps, such as getting regularly vaccinated 
 		or masking in crowded spaces, while addressing that some of the earlier measures of the pandemic, such as 
-		lockdowns, are no longer as necessary. I also provided when the vaccine came out to show how that may have 
-		impacted the severity and deadliness of cases over time. There is still room to add more detail about the 
-		uncertainty of severity of future Covid-19 cases at the time, which might be addressed through researchers' 
+		lockdowns, are no longer as necessary. I also provided an annotation for when the vaccine came out to show how that may have 
+		impacted the severity and deadliness of cases over time. There is still room to add more detail about other events, 
+		such as when boosters came out or mask mandates changed, to add further context. Additionally, uncertainty 
+		of severity of future Covid-19 cases at the time could be better addressed by adding researchers' 
 		predictions of future cases at the time in unfilled circles, but there is a chance this could have further 
-		complicated the message. Additionally, other events, such as when boosters came out or mask mandates changes, 
-		could add further context.
+		complicated the message. Ultimately, I wanted to focus on timelines, scales, and the humans behind the datapoints 
+		at the expense of provoding more context and understanding of uncertainty. 
       </p>
 		</section>
 	</main>
